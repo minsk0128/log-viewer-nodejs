@@ -1,0 +1,2246 @@
+[
+  { "id" : "ez_syslog_00001",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId1",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00002",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId1",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00003",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId1",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00004",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId1",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId2",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00005",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId2",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00006",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId2",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00007",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId3",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00008",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId3",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00009",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId3",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00010",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  { "id" : "ez_syslog_00011",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId4",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00012",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId4",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00013",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId4",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00014",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId4",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId5",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00015",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId5",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00016",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId5",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00017",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId6",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00018",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId6",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00019",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId6",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00020",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+    { "id" : "ez_syslog_00021",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId7",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00022",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId7",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00023",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId7",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00024",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId7",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId8",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00025",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId8",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00026",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId8",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00027",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId9",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00028",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId9",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00029",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId9",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00030",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+    { "id" : "ez_syslog_00031",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId10",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00032",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId10",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00033",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId10",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00034",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId10",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId11",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00035",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId11",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00036",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId11",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00037",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId12",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00038",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId12",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00039",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId12",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00040",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  { "id" : "ez_syslog_00041",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId13",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00042",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId13",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00043",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId13",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00044",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId13",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId14",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00045",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId14",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00046",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId14",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00047",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId15",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00048",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId15",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00049",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId15",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00050",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  { "id" : "ez_syslog_00051",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId16",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00052",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId16",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00053",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId16",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00054",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId16",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId17",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00055",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId17",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00056",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId17",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00057",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId18",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00058",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId18",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00059",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId18",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00060",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  { "id" : "ez_syslog_00061",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId19",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00062",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId19",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00063",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId19",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00064",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId19",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId20",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00065",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId20",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00066",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId20",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00067",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId21",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00068",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId21",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00069",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId21",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00070",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  { "id" : "ez_syslog_00071",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId22",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00072",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId22",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00073",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId22",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00074",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId22",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId23",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00075",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId23",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00076",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId23",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00077",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId24",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00078",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId24",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00079",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId24",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00080",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  { "id" : "ez_syslog_00081",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId25",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00082",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId25",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00083",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId25",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00084",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId25",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId26",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00085",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId26",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00086",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId26",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00087",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId27",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00088",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId27",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00089",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId27",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00090",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  { "id" : "ez_syslog_00091",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId28",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00092",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId28",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00093",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId28",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00094",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId28",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId29",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00095",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId29",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00096",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId29",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00097",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId30",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00098",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId30",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00099",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId30",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00100",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  { "id" : "ez_syslog_00101",
+    "method" : "searchPatient",
+    "occurrenceDate" : "2020-09-23 18:00:33",
+    "processMethod" : "GET",
+    "processTime" : 542,
+    "processGroupId" : "taskId31",
+    "ip" : "192.168.0.1",
+    "responseCode" : "200",
+    "response" : {
+        "resourceType" : "Patient",
+        "id" : "example",
+        "text" : {
+  
+        }
+    },
+    "service" : "com.ezFhir.Controller",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00102",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 2405,
+    "processGroupId" : "taskId31",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00103",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 3274,
+    "processGroupId" : "taskId31",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.service.EzHubService",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+  { "id" : "ez_syslog_00104",
+    "method" : "searchResource",
+    "occurrenceDate" : "2020-09-23 18:00:45",
+    "processMethod" : "GET",
+    "processTime" : 1511,
+    "processGroupId" : "taskId31",
+    "ip" : "192.168.0.1",
+    "responseCode" : null,
+    "response" : null,
+    "service" : "com.ezFhir.station.EzMybatisPatientDao",
+    "url" : "Patient?birthDate=1965-03-02"
+  },
+
+  {
+    "occurrenceDate": "2020-10-01 13:29:10",
+    "method": "searchPatient",
+    "processGroupId": "taskId32",
+    "service": "com.ezFhir.Controller",
+    "response": "{  \"resourceType\": \"Patient\",  \"id\": \"example\",  \"text\": {    \"status\": \"generated\",    \"div\": \"<div xmlns=\"http://www.w3.org/1999/xhtml\">nttt<table>ntttt<tbody>nttttt<tr>ntttttt<td>Name</td>ntttttt<td>Peter James n              <b>Chalmers</b> (&quot;Jim&quot;)n            </td>nttttt</tr>nttttt<tr>ntttttt<td>Address</td>ntttttt<td>534 Erewhon, Pleasantville, Vic, 3999</td>nttttt</tr>nttttt<tr>ntttttt<td>Contacts</td>ntttttt<td>Home: unknown. Work: (03) 5555 6473</td>nttttt</tr>nttttt<tr>ntttttt<td>Id</td>ntttttt<td>MRN: 12345 (Acme Healthcare)</td>nttttt</tr>ntttt</tbody>nttt</table>ntt</div>\"  },  \"identifier\": [    {      \"use\": \"usual\",      \"type\": {        \"coding\": [          {            \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",            \"code\": \"MR\"          }        ]      },      \"system\": \"urn:oid:1.2.36.146.595.217.0.1\",      \"value\": \"12345\",      \"period\": {        \"start\": \"2001-05-06\"      },      \"assigner\": {        \"display\": \"Acme Healthcare\"      }    }  ],  \"active\": true,  \"name\": [    {      \"use\": \"official\",      \"family\": \"Chalmers\",      \"given\": [        \"Peter\",        \"James\"      ]    },    {      \"use\": \"usual\",      \"given\": [        \"Jim\"      ]    },    {      \"use\": \"maiden\",      \"family\": \"Windsor\",      \"given\": [        \"Peter\",        \"James\"      ],      \"period\": {        \"end\": \"2002\"      }    }  ],  \"telecom\": [    {      \"use\": \"home\"    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 6473\",      \"use\": \"work\",      \"rank\": 1    },    {      \"system\": \"phone\",      \"value\": \"(03) 3410 5613\",      \"use\": \"mobile\",      \"rank\": 2    },    {      \"system\": \"phone\",      \"value\": \"(03) 5555 8834\",      \"use\": \"old\",      \"period\": {        \"end\": \"2014\"      }    }  ],  \"gender\": \"male\",  \"birthDate\": \"1974-12-25\",  \"_birthDate\": {    \"extension\": [      {        \"url\": \"http://hl7.org/fhir/StructureDefinition/patient-birthTime\",        \"valueDateTime\": \"1974-12-25T14:35:45-05:00\"      }    ]  },  \"deceasedBoolean\": false,  \"address\": [    {      \"use\": \"home\",      \"type\": \"both\",      \"text\": \"534 Erewhon St PeasantVille, Rainbow, Vic  3999\",      \"line\": [        \"534 Erewhon St\"      ],      \"city\": \"PleasantVille\",      \"district\": \"Rainbow\",      \"state\": \"Vic\",      \"postalCode\": \"3999\",      \"period\": {        \"start\": \"1974-12-25\"      }    }  ],  \"contact\": [    {      \"relationship\": [        {          \"coding\": [            {              \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0131\",              \"code\": \"N\"            }          ]        }      ],      \"name\": {        \"family\": \"du Marché\",        \"_family\": {          \"extension\": [            {              \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\",              \"valueString\": \"VV\"            }          ]        },        \"given\": [          \"Bénédicte\"        ]      },      \"telecom\": [        {          \"system\": \"phone\",          \"value\": \"+33 (237) 998327\"        }      ],      \"address\": {        \"use\": \"home\",        \"type\": \"both\",        \"line\": [          \"534 Erewhon St\"        ],        \"city\": \"PleasantVille\",        \"district\": \"Rainbow\",        \"state\": \"Vic\",        \"postalCode\": \"3999\",        \"period\": {          \"start\": \"1974-12-25\"        }      },      \"gender\": \"female\",      \"period\": {        \"start\": \"2012\"      }    }  ],  \"managingOrganization\": {    \"reference\": \"Organization/1\"  }}",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00105",
+    "processMethod": "GET",
+    "processTime": "5321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": "404"
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:31:18",
+    "method": "searchResourceMultipleDao",
+    "processGroupId": "taskId32",
+    "service": "com.ezFhir.Service",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00106",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 13:32:20",
+    "method": "searchResource",
+    "processGroupId": "taskId32",
+    "service": "com.ezFhir.Dao",
+    "response": "",
+    "ip": "192.16.254.1",
+    "id": "ez_syslog_00107",
+    "processMethod": "GET",
+    "processTime": "4321",
+    "url": "Patient?birthdate=1952-02-03&a1b2c3de5f6",
+    "responseCode": ""
+  },
+  {
+    "occurrenceDate": "2020-10-01 12:19:10",
+    "method": "searchObservation",
+    "processGroupId": "taskId33",
+    "service": "com.ezFhir.Controller",
+    "response": {
+      "resourceType": "Observation",
+      "id": "f001",
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 6323 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span>(Details : {LOINC code '15074-8' = 'Glucose [Moles/volume] in Blood', given as 'Glucose [Moles/volume] in Blood'})</span></p><p><b>subject</b>: <a>P. van de Heuvel</a></p><p><b>effective</b>: 02/04/2013 9:30:10 AM --&gt; (ongoing)</p><p><b>issued</b>: 03/04/2013 3:30:10 PM</p><p><b>performer</b>: <a>A. Langeveld</a></p><p><b>value</b>: 6.3 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></p><p><b>interpretation</b>: High <span>(Details : {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation code 'H' = 'High', given as 'High'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td>*</td><td>3.1 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td><td>6.2 mmol/l<span> (Details: UCUM code mmol/L = 'mmol/L')</span></td></tr></table></div>"
+      },
+      "identifier": [
+        {
+          "use": "official",
+          "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+          "value": "6323"
+        }
+      ],
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "15074-8",
+            "display": "Glucose [Moles/volume] in Blood"
+          }
+        ]
+      },
+      "subject": {
+      "reference": "Patient/f001",
+      "display": "P. van de Heuvel"
+      },
+      "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+      },
+      "issued": "2013-04-03T15:30:10+01:00",
+      "performer": [
+      {
+        "reference": "Practitioner/f005",
+        "display": "A. Langeveld"
+      }
+      ],
+      "valueQuantity": {
+      "value": 6.3,
+      "unit": "mmol/l",
+      "system": "http://unitsofmeasure.org",
+      "code": "mmol/L"
+      },
+      "interpretation": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+            "code": "H",
+            "display": "High"
+          }
+        ]
+      }
+      ],
+      "referenceRange": [
+      {
+        "low": {
+          "value": 3.1,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        },
+        "high": {
+          "value": 6.2,
+          "unit": "mmol/l",
+          "system": "http://unitsofmeasure.org",
+          "code": "mmol/L"
+        }
+      }
+      ]
+    },
+    "ip": "192.16.0.1",
+    "id": "ez_syslog_00108",
+    "processMethod": "GET",
+    "processTime": "6321",
+    "url": "Observation?patient=123456",
+    "responseCode": "200"
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResourceMultipleDao",
+      "processGroupId": "taskId33",
+      "service": "com.ezFhir.Service",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00109",
+      "processMethod": "GET",
+      "processTime": "5321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  },
+  {
+      "occurrenceDate": "2020-10-01 12:19:10",
+      "method": "searchResource",
+      "processGroupId": "taskId33",
+      "service": "com.ezFhir.Dao",
+      "response": "",
+      "ip": "192.16.0.1",
+      "id": "ez_syslog_00110",
+      "processMethod": "GET",
+      "processTime": "4321",
+      "url": "Observation?patient=123456",
+      "responseCode": ""
+  }
+]

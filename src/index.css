@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* 로그 리스트 테이블 CSS */
+#logListTable {
+  /* display: block; */
+  font-size: 0.8em;
+}
+
+#logListTable thead th{
+  vertical-align: top;
+  /* position:sticky; */
+  /* top:0 */
+  text-align: center;
+  background-color: #055AB4;
+  color: white;
+}
+
+#logListTable thead th label{
+  vertical-align: top;
+  text-align: -webkit-center;
+}
+
+#logListTable tbody {
+  display:inline-block;
+  /* height:500px; */
+  max-height: calc(83vh - 178px);
+  overflow-y:overlay;
+}
+
+#logListTable thead{
+  display:inline-table;
+  width:100%;
+  table-layout:fixed;
+}
+
+#logListTable tbody tr {
+  display:inline-table;
+  width:100%;
+  table-layout:fixed;
+} 
+
+#logListTable tbody tr td { 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}  
+
+
+/* 로그 상세정보 테이블 CSS */
+#logDetailTable {
+  font-size: 0.8em;
+}
+
+#logDetailTable thead th{
+  vertical-align: top;
+  /* position:sticky; */
+  /* top:0 */
+  text-align: center;
+  background-color: #055AB4;
+  color: white;
+}
+
+
+/* DatePicker CSS */
+.myDatePicker {
+  max-width: 120px;
+  text-align: center;
+}
+
+/* Log Viewer Container */
+#logViewerContainer {
+  background-color: aliceblue;
+}
+
+/* Log Viewer Header */
+#logViewerHeader nav{
+  background-color: #055AB4;
+}
+
+/* Log List Content */
+#logListContent {
+  display: inline-block;
+  max-height: 83vh;
+}
+
+/* Log Detail Content */
+#logDetailContent {
+  display: inline-block;
+  overflow: auto;
+  max-height: 83vh;
+}
+
