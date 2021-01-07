@@ -1,0 +1,453 @@
+[
+    {
+        "occurrenceDate": "2020-11-19 14:44:08",
+        "method": "searchResource",
+        "processGroupId": "taskId1",
+        "service": "com.ezFhir.dao.impl.snubh.EzMybatisSnubhPatientDao",
+        "ip": "",
+        "id": "267",
+        "processMethod": "",
+        "processTime": "938",
+        "url": "Patientbirthdate=eq1980-11-01",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:44:08",
+        "method": "searchResource",
+        "processGroupId": "taskId1",
+        "service": "com.ezFhir.station.service.impl.EzSnubhService",
+        "ip": "",
+        "id": "268",
+        "processMethod": "",
+        "processTime": "1171",
+        "url": "Patientbirthdate=eq1980-11-01",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:44:09",
+        "method": "searchPatient",
+        "processGroupId": "taskId1",
+        "service": "com.ezFhir.station.controller.impl.snubh.PatientController",
+        "response": {
+            "entry": [
+                {
+                    "resource": {
+                        "identifier": [
+                            {
+                                "value": "00001"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "city": "서울특별시",
+                                "use": "home",
+                                "line": [
+                                    "종로구 숭인동 85"
+                                ],
+                                "text": "서울특별시 종로구 숭인동 85"
+                            }
+                        ],
+                        "gender": "male",
+                        "meta": {
+                            "lastUpdated": "2020-11-19T14:44:08.760+09:00"
+                        },
+                        "name": [
+                            {
+                                "use": "official",
+                                "text": "*신*"
+                            }
+                        ],
+                        "active": true,
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "use": "mobile",
+                                "value": "010-1234-5678"
+                            }
+                        ],
+                        "id": "00001",
+                        "birthDate": "1980-11-01",
+                        "resourceType": "Patient"
+                    }
+                }
+            ],
+            "total": 1,
+            "type": "searchset",
+            "resourceType": "Bundle"
+        },
+        "ip": "",
+        "id": "269",
+        "processMethod": "",
+        "processTime": "1285",
+        "url": "Patientbirthdate=eq1980-11-01",
+        "responseCode": "200"
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:45:11",
+        "method": "searchResource",
+        "processGroupId": "taskId2",
+        "service": "com.ezFhir.dao.impl.snubh.EzMybatisSnubhPatientDao",
+        "ip": "",
+        "id": "270",
+        "processMethod": "",
+        "processTime": "42",
+        "url": "Patientbirthdate=eq1972-03-22",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:45:11",
+        "method": "searchResource",
+        "processGroupId": "taskId2",
+        "service": "com.ezFhir.station.service.impl.EzSnubhService",
+        "ip": "",
+        "id": "271",
+        "processMethod": "",
+        "processTime": "92",
+        "url": "Patientbirthdate=eq1972-03-22",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:45:11",
+        "method": "searchPatient",
+        "processGroupId": "taskId2",
+        "service": "com.ezFhir.station.controller.impl.snubh.PatientController",
+        "response": {
+            "entry": [
+                {
+                    "resource": {
+                        "identifier": [
+                            {
+                                "value": "00002"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "city": "인천",
+                                "use": "home",
+                                "line": [
+                                    "중구 운서동 공항로 272"
+                                ],
+                                "text": "인천 중구 운서동 공항로 272"
+                            }
+                        ],
+                        "gender": "female",
+                        "meta": {
+                            "lastUpdated": "2020-11-19T14:45:11.215+09:00"
+                        },
+                        "name": [
+                            {
+                                "use": "official",
+                                "text": "*정*"
+                            }
+                        ],
+                        "active": true,
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "use": "mobile",
+                                "value": "010-4685-7747"
+                            }
+                        ],
+                        "id": "00002",
+                        "birthDate": "1972-03-22",
+                        "resourceType": "Patient"
+                    }
+                }
+            ],
+            "total": 1,
+            "type": "searchset",
+            "resourceType": "Bundle"
+        },
+        "ip": "",
+        "id": "272",
+        "processMethod": "",
+        "processTime": "136",
+        "url": "Patientbirthdate=eq1972-03-22",
+        "responseCode": "200"
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:45:52",
+        "method": "searchResource",
+        "processGroupId": "taskId3",
+        "service": "com.ezFhir.dao.impl.snubh.EzMybatisSnubhPatientDao",
+        "ip": "",
+        "id": "273",
+        "processMethod": "",
+        "processTime": "36",
+        "url": "Patientbirthdate=eq1985-02-04",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:45:52",
+        "method": "searchResource",
+        "processGroupId": "taskId3",
+        "service": "com.ezFhir.station.service.impl.EzSnubhService",
+        "ip": "",
+        "id": "274",
+        "processMethod": "",
+        "processTime": "80",
+        "url": "Patientbirthdate=eq1985-02-04",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:45:52",
+        "method": "searchPatient",
+        "processGroupId": "taskId3",
+        "service": "com.ezFhir.station.controller.impl.snubh.PatientController",
+        "response": {
+            "entry": [
+                {
+                    "resource": {
+                        "identifier": [
+                            {
+                                "value": "00003"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "city": "서울특별시",
+                                "use": "home",
+                                "line": [
+                                    "강서구 화곡6동 화곡로 302"
+                                ],
+                                "text": "서울특별시 강서구 화곡6동 화곡로 302"
+                            }
+                        ],
+                        "gender": "female",
+                        "meta": {
+                            "lastUpdated": "2020-11-19T14:45:52.773+09:00"
+                        },
+                        "name": [
+                            {
+                                "use": "official",
+                                "text": "*우*"
+                            }
+                        ],
+                        "active": true,
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "use": "mobile",
+                                "value": "010-2215-2222"
+                            }
+                        ],
+                        "id": "00003",
+                        "birthDate": "1985-02-04",
+                        "resourceType": "Patient"
+                    }
+                }
+            ],
+            "total": 1,
+            "type": "searchset",
+            "resourceType": "Bundle"
+        },
+        "ip": "",
+        "id": "275",
+        "processMethod": "",
+        "processTime": "121",
+        "url": "Patientbirthdate=eq1985-02-04",
+        "responseCode": "200"
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:46:03",
+        "method": "searchResource",
+        "processGroupId": "taskId4",
+        "service": "com.ezFhir.dao.impl.snubh.EzMybatisSnubhPatientDao",
+        "ip": "",
+        "id": "276",
+        "processMethod": "",
+        "processTime": "36",
+        "url": "Patientbirthdate=eq1985-06-22",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:46:03",
+        "method": "searchResource",
+        "processGroupId": "taskId4",
+        "service": "com.ezFhir.station.service.impl.EzSnubhService",
+        "ip": "",
+        "id": "277",
+        "processMethod": "",
+        "processTime": "84",
+        "url": "Patientbirthdate=eq1985-06-22",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:46:03",
+        "method": "searchPatient",
+        "processGroupId": "taskId4",
+        "service": "com.ezFhir.station.controller.impl.snubh.PatientController",
+        "response": {
+            "entry": [
+                {
+                    "resource": {
+                        "identifier": [
+                            {
+                                "value": "00004"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "city": "대구광역시",
+                                "use": "home",
+                                "line": [
+                                    "북구 대학로 11"
+                                ],
+                                "text": "대구광역시 북구 대학로 11"
+                            }
+                        ],
+                        "gender": "female",
+                        "meta": {
+                            "lastUpdated": "2020-11-19T14:46:02.972+09:00"
+                        },
+                        "name": [
+                            {
+                                "use": "official",
+                                "text": "*아*"
+                            }
+                        ],
+                        "active": true,
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "use": "mobile",
+                                "value": "010-0000-0000"
+                            }
+                        ],
+                        "id": "00004",
+                        "birthDate": "1985-06-22",
+                        "resourceType": "Patient"
+                    }
+                }
+            ],
+            "total": 1,
+            "type": "searchset",
+            "resourceType": "Bundle"
+        },
+        "ip": "",
+        "id": "278",
+        "processMethod": "",
+        "processTime": "127",
+        "url": "Patientbirthdate=eq1985-06-22",
+        "responseCode": "200"
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:46:18",
+        "method": "searchResource",
+        "processGroupId": "taskId5",
+        "service": "com.ezFhir.dao.impl.snubh.EzMybatisSnubhPatientDao",
+        "ip": "",
+        "id": "279",
+        "processMethod": "",
+        "processTime": "35",
+        "url": "Patientbirthdate=eq1977-05-30",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:46:18",
+        "method": "searchResource",
+        "processGroupId": "taskId5",
+        "service": "com.ezFhir.station.service.impl.EzSnubhService",
+        "ip": "",
+        "id": "280",
+        "processMethod": "",
+        "processTime": "80",
+        "url": "Patientbirthdate=eq1977-05-30",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:46:18",
+        "method": "searchPatient",
+        "processGroupId": "taskId5",
+        "service": "com.ezFhir.station.controller.impl.snubh.PatientController",
+        "response": {
+            "entry": [
+                {
+                    "resource": {
+                        "identifier": [
+                            {
+                                "value": "00005"
+                            }
+                        ],
+                        "address": [
+                            {
+                                "city": "부산광역시",
+                                "use": "home",
+                                "line": [
+                                    "중구 어디어디"
+                                ],
+                                "text": "부산광역시 중구 어디어디"
+                            }
+                        ],
+                        "gender": "male",
+                        "meta": {
+                            "lastUpdated": "2020-11-19T14:46:18.172+09:00"
+                        },
+                        "name": [
+                            {
+                                "use": "official",
+                                "text": "*일*"
+                            }
+                        ],
+                        "active": true,
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "use": "mobile",
+                                "value": "010-0000-0000"
+                            }
+                        ],
+                        "id": "00005",
+                        "birthDate": "1977-05-30",
+                        "resourceType": "Patient"
+                    }
+                }
+            ],
+            "total": 1,
+            "type": "searchset",
+            "resourceType": "Bundle"
+        },
+        "ip": "",
+        "id": "281",
+        "processMethod": "",
+        "processTime": "120",
+        "url": "Patientbirthdate=eq1977-05-30",
+        "responseCode": "200"
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:47:02",
+        "method": "searchResource",
+        "processGroupId": "taskId8",
+        "service": "com.ezFhir.dao.impl.snubh.EzMybatisSnubhPatientDao",
+        "ip": "",
+        "id": "282",
+        "processMethod": "",
+        "processTime": "25",
+        "url": "Patientbirthdate=1977-05-01",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:47:02",
+        "method": "searchResource",
+        "processGroupId": "taskId8",
+        "service": "com.ezFhir.station.service.impl.EzSnubhService",
+        "ip": "",
+        "id": "283",
+        "processMethod": "",
+        "processTime": "71",
+        "url": "Patientbirthdate=1977-05-01",
+        "responseCode": "   "
+    },
+    {
+        "occurrenceDate": "2020-11-19 14:47:02",
+        "method": "searchPatient",
+        "processGroupId": "taskId8",
+        "service": "com.ezFhir.station.controller.impl.snubh.PatientController",
+        "ip": "",
+        "id": "284",
+        "processMethod": "",
+        "processTime": "112",
+        "url": "Patientbirthdate=1977-05-01",
+        "responseCode": "   "
+    }
+]

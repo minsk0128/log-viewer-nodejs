@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/log-viewer-nodejs/static/css/main.1f4f2c63.chunk.css",
+    "main.js": "/log-viewer-nodejs/static/js/main.6561742d.chunk.js",
+    "main.js.map": "/log-viewer-nodejs/static/js/main.6561742d.chunk.js.map",
+    "runtime-main.js": "/log-viewer-nodejs/static/js/runtime-main.c73b0fb6.js",
+    "runtime-main.js.map": "/log-viewer-nodejs/static/js/runtime-main.c73b0fb6.js.map",
+    "static/css/2.6c4b9a04.chunk.css": "/log-viewer-nodejs/static/css/2.6c4b9a04.chunk.css",
+    "static/js/2.6d262408.chunk.js": "/log-viewer-nodejs/static/js/2.6d262408.chunk.js",
+    "static/js/2.6d262408.chunk.js.map": "/log-viewer-nodejs/static/js/2.6d262408.chunk.js.map",
+    "index.html": "/log-viewer-nodejs/index.html",
+    "precache-manifest.9f17f3eb2b11e0214b6693887ce99636.js": "/log-viewer-nodejs/precache-manifest.9f17f3eb2b11e0214b6693887ce99636.js",
+    "service-worker.js": "/log-viewer-nodejs/service-worker.js",
+    "static/css/2.6c4b9a04.chunk.css.map": "/log-viewer-nodejs/static/css/2.6c4b9a04.chunk.css.map",
+    "static/css/main.1f4f2c63.chunk.css.map": "/log-viewer-nodejs/static/css/main.1f4f2c63.chunk.css.map",
+    "static/js/2.6d262408.chunk.js.LICENSE.txt": "/log-viewer-nodejs/static/js/2.6d262408.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c73b0fb6.js",
+    "static/css/2.6c4b9a04.chunk.css",
+    "static/js/2.6d262408.chunk.js",
+    "static/css/main.1f4f2c63.chunk.css",
+    "static/js/main.6561742d.chunk.js"
+  ]
+}
